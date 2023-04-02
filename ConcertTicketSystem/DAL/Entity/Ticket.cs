@@ -10,9 +10,9 @@ namespace ConcertTicketSystem.DAL.Entity
         public Guid Id { get; set; }
 
         [Display(Name = "Fecha de ingreso")]
-        public DateTime? UserDate { get; set; }
+        public DateTime? UserDate { get; set; } //Era Use de uso no "User"
 
-        [Display(Name = "estado")]
+        [Display(Name = "Estado")]
         public bool IsUsed { get; set; }
 
 
