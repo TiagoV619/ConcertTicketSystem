@@ -15,7 +15,6 @@ namespace ConcertTicketSystem.DAL.Entity
         [Display(Name = "Estado")]
         public bool IsUsed { get; set; }
 
-
         [Display(Name = "Porteria de ingreso")]
         public string? EntranceGate { get; set; }
     }

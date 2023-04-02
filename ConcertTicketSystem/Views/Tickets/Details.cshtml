@@ -4,32 +4,13 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Detalles Boleta</h1>
+
 
 <div>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IsUsed)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IsUsed)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EntranceGate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EntranceGate)
-        </dd>
-    </dl>
+    <partial name="../Shared/PartialViews/_TicketsDetailsDelete.cshtml" />
 </div>
+
 <div>
-    <a asp-action="Editar" asp-route-id="@Model?.Id" class="btn btn-outline-warning">Guardar cambios</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-outline-warning">Editar Boleta</a> |
     <a asp-action="Index"class="btn btn-outline-success">Regresar al registro</a>
 </div>
